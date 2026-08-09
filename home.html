@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LAST BREACH</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+            z-index: 100;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ff3b30;
+        }
+
+        .hero {
+            height: 100vh;
+            min-height: 650px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background:
+                linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)),
+                url("images/hero.jpg") center/cover;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #ccc;
+            margin-bottom: 35px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 17px 45px;
+            background: #e63232;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .download-btn:hover {
+            background: #ff4545;
+        }
+
+        section {
+            padding: 100px 10%;
+            border-bottom: 1px solid #222;
+        }
+
+        section h2 {
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            color: #bbb;
+            line-height: 1.8;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #151515;
+            padding: 30px;
+            border: 1px solid #292929;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        .patch {
+            margin-top: 20px;
+            padding: 25px;
+            background: #151515;
+            border-left: 4px solid #e63232;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            color: #666;
+            background: #050505;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                padding: 0 20px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LAST BREACH</div>
+
+    <nav>
+        <a href="#game">GAME</a>
+        <a href="#download">DOWNLOAD</a>
+        <a href="#patch">PATCH NOTES</a>
+        <a href="#notice">NOTICE</a>
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <h1>LAST BREACH</h1>
+
+    <p>3v3 ONLINE FPS</p>
+
+    <a class="download-btn" href="#download">
+        DOWNLOAD
+    </a>
+
+</section>
+
+
+<section id="game">
+
+    <h2>LAST BREACH</h2>
+
+    <p>
+        빠른 판단과 팀워크가 승리를 결정하는
+        3v3 실시간 온라인 FPS입니다.
+    </p>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>3 vs 3</h3>
+            <p>
+                공격팀과 수비팀으로 나뉘어
+                치열한 전투를 펼치십시오.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>BREACH</h3>
+            <p>
+                수비선을 돌파하고
+                적의 베이스를 장악하십시오.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>TEAMWORK</h3>
+            <p>
+                부활 에너지와 폭탄을 활용하여
+                팀의 승리를 만들어내십시오.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="download">
+
+    <h2>DOWNLOAD</h2>
+
+    <p>
+        LAST BREACH는 PC 전용 온라인 게임입니다.
+    </p>
+
+    <br>
+
+    <!-- 실제 Installer 주소로 변경 -->
+    <a class="download-btn"
+       href="DOWNLOAD_INSTALLER_URL">
+        WINDOWS INSTALLER
+    </a>
+
+</section>
+
+
+<section id="patch">
+
+    <h2>PATCH NOTES</h2>
+
+    <div class="patch">
+        <h3>v0.1.0 — Initial Prototype</h3>
+
+        <p>
+            LAST BREACH의 첫 번째 프로토타입입니다.
+        </p>
+
+        <br>
+
+        <p>
+            • 3v3 온라인 FPS<br>
+            • 공격 / 수비 시스템<br>
+            • 부활 에너지 시스템<br>
+            • 폭탄 시스템<br>
+            • 기본 맵 시스템
+        </p>
+    </div>
+
+</section>
+
+
+<section id="notice">
+
+    <h2>NOTICE</h2>
+
+    <div class="patch">
+        <h3>공식 홈페이지 오픈</h3>
+
+        <p>
+            LAST BREACH 공식 홈페이지가 오픈되었습니다.
+        </p>
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 LAST BREACH. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
